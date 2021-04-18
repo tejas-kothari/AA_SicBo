@@ -1,38 +1,54 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  --blue-theme: #053d6f;
   min-height: 100vh;
+  background-color: var(--blue-theme);
+  display: grid;
+  grid-template-columns: 0.8fr 0.2fr;
+  grid-template-rows: 0.8fr 0.2fr;
+  grid-template-areas:
+    "board history"
+    "play play";
+}
+
+.play {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+}
+
+.play input {
+  width: 200px;
+  height: 50px;
+}
+
+.play h2 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.play > div {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.play > div > div {
+  display: flex;
+}
+
+.history {
+  color: Yellow;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.historyDice {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0px;
+}
+
+.msg {
+  display: flex;
+  flex-direction: column;
+  color: white;
 }

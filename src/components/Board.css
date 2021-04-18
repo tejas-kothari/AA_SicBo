@@ -1,0 +1,132 @@
+.Board {
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row1 {
+  height: 30%;
+  display: grid;
+  grid-template-columns: 11fr 10fr 9fr 9fr 9fr 10fr 11fr;
+  grid-auto-rows: 100%;
+}
+
+.small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.double1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30% 70%;
+  grid-template-areas:
+    "double1_head double1_head double1_head"
+    "double1_1 double1_2 double1_3";
+}
+
+.triple1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "triple1_head"
+    "triple1_1"
+    "triple1_2"
+    "triple1_3";
+}
+
+.mid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "mid_head"
+    "mid_1"
+    "mid_2"
+    "mid_3"
+    "mid_4"
+    "mid_5"
+    "mid_6";
+}
+
+.edges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.edges > * {
+  margin: 5px 0px;
+}
+
+.row2 {
+  height: 25%;
+  display: flex;
+}
+
+.row2-items {
+  flex: 1;
+}
+
+.row3 {
+  height: 25%;
+}
+
+.row4 {
+  height: 20%;
+}
+
+.row4-items {
+  text-align: center;
+  padding: 0px 7px;
+}
+
+.row5 {
+  height: 10%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.orange-border {
+  border: 2px solid orange;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.active {
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.betChosen {
+  background-color: red;
+}
